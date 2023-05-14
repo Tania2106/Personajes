@@ -7,15 +7,15 @@
             
          </a>
             
-    <h1>Series</h1>
+    <h1>Personajes</h1>
     
     <div fxFlex fxLayout="column">
         <div fxLayout="row wrap">
     <div fxFlex="20" fxFlex.md="33"  fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
-    *ngFor="let character of allSeries | async">
-    <mat-card  class="comics" style="background-color: rgba(219, 48, 48, 0.719)">
+    *ngFor="let character of allPersonajes | async">
+    <mat-card  class="comics" style="background-color: rgba(218, 218, 218, 0.1)">
     <img mat-card-image class="imagenes" src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.title}}">
-    <mat-card-title style="color: aliceblue;">
+    <mat-card-title>
         {{character.title}}
     </mat-card-title>
     

@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { SeriesApiService } from './series/shared/series-api.service';
+import { PersonajesApiService } from './personajes/shared/personajes-api.service';
 import { Observable } from 'rxjs';
 
 
 @Component({
-  selector: 'app-series',
-  templateUrl: './series.component.html',
-  styleUrls: ['./series.component.css']
+  selector: 'app-personajes',
+  templateUrl: './personajes.component.html',
+  styleUrls: ['./personajes.component.css']
 })
-export class SeriesComponent implements OnInit {
+export class PersonajesComponent implements OnInit {
 
-  constructor(private serieSvc: SeriesApiService){ }
-  allSeries: Observable<any> | undefined;
+  constructor(private personajeSvc: PersonajesApiService){ }
+  allPersonajes: Observable<any> | undefined;
   
 
   ngOnInit(){
-    this.getSeries();
+    this.getPersonajes();
   
   }
-  getSeries(){
-  this.allSeries = this.serieSvc.getAllSeries();
+  getPersonajes(){
+  this.allPersonajes = this.personajeSvc.getAllPersonajes();
   }
 }

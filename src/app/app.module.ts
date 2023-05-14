@@ -14,16 +14,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { SerieComponent } from './series/series/serie.component';
-import { SeriesComponent } from './series/series.component';
+import { PersonajeComponent } from './personajes/personajes/personaje.component';
+import { PersonajesComponent } from './personajes/personajes.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SerieComponent,
-    SeriesComponent
+    PersonajeComponent,
+    PersonajesComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class SeriesApiService {
+export class PersonajesApiService {
   PUBLIC_KEY = '';
   HASH = ''; 
   URL_API = `https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=cbccd95e75c5417da8a7b920a58a2a6e&hash=e9aa3aa6dab54a746bb7b271c32efc83
@@ -15,7 +15,7 @@ export class SeriesApiService {
  
   constructor( private http: HttpClient) { }
 
-  getAllSeries () : Observable<any>{
+  getAllPersonajes () : Observable<any>{
     return this.http.get<any>(this.URL_API)
     .pipe(map((data: any)=>data.data.results))
   }

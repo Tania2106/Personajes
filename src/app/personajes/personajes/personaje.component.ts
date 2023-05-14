@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-serie',
-  templateUrl: './serie.component.html',
-  styleUrls: ['./serie.component.css']
+  templateUrl: './personaje.component.html',
+  styleUrls: ['./personajes.component.css']
 })
-export class SerieComponent {
+export class PersonajeComponent {
 
 }
