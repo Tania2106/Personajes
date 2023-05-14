@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 export class PersonajesApiService {
   PUBLIC_KEY = '';
   HASH = ''; 
-  URL_API = `https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=cbccd95e75c5417da8a7b920a58a2a6e&hash=e9aa3aa6dab54a746bb7b271c32efc83
+  URL_API = `https://gateway.marvel.com:443/v1/public/characters?&ts=1&apikey=cbccd95e75c5417da8a7b920a58a2a6e&hash=e9aa3aa6dab54a746bb7b271c32efc83
   `;
  
   constructor( private http: HttpClient) { }
