@@ -287,7 +287,7 @@
     .image img { 
     width: 29%;  
     padding: 0%;
-    margin: 2%;
+    margin: 5%;
      }
         
         
@@ -305,9 +305,12 @@
     }
     .comics{
         top: 90%;
-        width: 80%;
-        margin-left: 15%;
-        margin-right: 15%;
+        width: 200px;
+        height: auto;
+
+        margin-left: 20%;
+        font-size: 4pt;
+        margin-right: 25%;
         margin-top:10%;
     }
     
@@ -321,15 +324,15 @@
         font-family:'Times New Roman', Times, serif;
         font-size: 30pt;
         position: absolute;
-        left: 580px;
+        left: 860px;
         top: 300px;
     }
     
     
     .image {
-        width: 30%;
+        width: 20%;
         height: 10%;
         position: absolute;
-        left: 580px;
+        left: 850px;
         top: 200px;
         }
