@@ -14,7 +14,7 @@
     <div fxFlex="20" fxFlex.md="33"  fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
     *ngFor="let character of allPersonajes | async">
     <mat-card  class="comics" style="background-color: rgba(20, 17, 17, 0.719)">
-    <img mat-card-image class="imagenes" src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.title}}">
+    <img mat-card-image class="imagenes" src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.name}}">
     <mat-card-title style="color: aliceblue;">
         {{character.name}}
     </mat-card-title>
